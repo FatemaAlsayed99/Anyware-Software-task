@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(192, 211, 247);
+}
+
+.welcome-message {
+  font-size: 54px;
+  margin-bottom: 20px;
+  color: rgb(55, 82, 133);
+}
+
+.auth-button {
+  padding: 10px 20px;
+  font-size: 28px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e91e63;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #c2185b;
+}
+
+$gl-ms : "screen and (max-width: 23.5em)"; 
+$gl-xs : "screen and (max-width: 35.5em)"; 
+$gl-sm : "screen and (max-width: 48em)"; 
+$gl-md : "screen and (max-width: 64em)";
+$gl-lg : "screen and (max-width: 80em)"; 
+
+.wrapper {
+  overflow-x: auto;
+}
+
+.wrapper table {
+  white-space: nowrap;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  font-size: 21px;
+  overflow: hidden;
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 0 20px;
+  position: relative;
+
+  * {
+    position: relative
+  }
+
+  td,
+  th {
+    padding-left: 8px;
+    font-size: 21px;
+    min-width: 200px;
+  }
+
+  thead tr {
+    height: 60px;
+    background: #f05a8c;
+    font-size: 16px;
+  }
+
+  tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #E3F1D5;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  td,
+  th {
+    text-align: center;
+
+    &.l {
+      text-align: right
+    }
+
+    &.c {
+      text-align: center
+    }
+
+    &.r {
+      text-align: center
+    }
+  }
+}
+
+
+@media #{$gl-xs} {
+
+  table {
+    display: block;
+
+    >*,
+    tr,
+    td,
+    th {
+      display: block
+    }
+
+    thead {
+      display: none
+    }
+
+    tbody tr {
+      height: auto;
+      padding: 8px 0;
+
+      td {
+        padding-left: 45%;
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0
+        }
+
+        &:before {
+          position: absolute;
+          font-weight: 700;
+          width: 40%;
+          left: 10px;
+          top: 0
+        }
+
+        &:nth-child(1):before {
+          content: "Code";
+        }
+
+        &:nth-child(2):before {
+          content: "Stock";
+        }
+
+        &:nth-child(3):before {
+          content: "Cap";
+        }
+
+        &:nth-child(4):before {
+          content: "Inch";
+        }
+
+        &:nth-child(5):before {
+          content: "Box Type";
+        }
+      }
+    }
+  }
+}
+
+.control:hover {
+  padding: 10px 8px;
+  font-size: 22px;
+  color: #c2185b;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form {
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+@media (max-width: 576px) {
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+  }
+}
+
+
+.submit {
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e91e63;
+  color: #ffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body {
+  background: rgb(192, 211, 247);
+  font: 400 14px 'Calibri', 'Arial';
+  padding: 20px;
+}
